@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RainFall" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barChart.MainController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="54.0" layoutY="43.0" prefHeight="343.0" prefWidth="493.0" title="The RainFall Distribution on Seoul in 2016">
+        <xAxis>
+          <CategoryAxis fx:id="month" endMargin="12.0" label="month" side="BOTTOM" startMargin="1.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="RainFall" label="RainFall(ml)" prefHeight="272.0" prefWidth="47.0" side="LEFT" tickUnit="20.0" upperBound="360.0" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="28.0" layoutY="14.0" text="* 2016년 서울시 강수량 분포 *">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
